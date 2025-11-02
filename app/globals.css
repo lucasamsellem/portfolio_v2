@@ -8,3 +8,7 @@
 button {
   cursor: pointer;
 }
+
+.ion-icon {
+  font-size: 32px;
+}
