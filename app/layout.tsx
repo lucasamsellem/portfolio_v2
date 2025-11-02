@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <div className={`p-10 ${poppins.className} tracking-wide`}>{children}</div>
+        <div className={`p-10 ${poppins.className} tracking-[0.3px]`}>{children}</div>
 
         <Script
           type="module"
