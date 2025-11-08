@@ -1,4 +1,4 @@
-import HardSkill from './HardSkill'
+import HardSkill from './HardSkill';
 
 export const HARD_SKILLS: Record<string, string> = {
   HTML: 'html5',
@@ -20,14 +20,15 @@ export const HARD_SKILLS: Record<string, string> = {
   postgreSQL: 'postgresql',
   zustand: 'zustand',
   'React Query': 'react-query',
-}
+  'Framer Motion': 'framer-motion',
+};
 
 export default function HardSkillList() {
   return (
-    <ul className="flex font-medium gap-2 items-center flex-wrap">
-      {Object.keys(HARD_SKILLS).map(s => (
+    <ul className='flex gap-2 items-center flex-wrap'>
+      {Object.keys(HARD_SKILLS).map((s) => (
         <HardSkill skill={s} key={s} />
       ))}
     </ul>
-  )
+  );
 }
